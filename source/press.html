@@ -1,0 +1,22 @@
+---
+layout: default
+use:
+    - press_releases
+
+---
+{% block content %}
+
+    <p>
+        Please see our <a href="{{ site.url }}/press/kit/">press kit</a> for additional
+        materials.
+    </p>
+
+    <strong>Press Releases</strong>
+    <ul>
+        {% for pr in data.press_releases %}
+            <li>
+                <a title="{{ pr.title }}" href="{{ pr.url }}">{{ pr.title }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
