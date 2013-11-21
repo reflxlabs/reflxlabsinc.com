@@ -89,6 +89,10 @@ section.jumbo h1 {
 	font-size: 1.5em;
 }
 
+.index-page .social-media ul.nav a:hover {
+	color: #fc3f1d;
+}
+
 .site-footer {
 	margin-top: 5em;
 	font-size: .75em;
