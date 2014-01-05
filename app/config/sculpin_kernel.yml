@@ -1,0 +1,6 @@
+sculpin_content_types:
+    press_releases:
+        path: _press
+    team:
+        singular_name: bio
+

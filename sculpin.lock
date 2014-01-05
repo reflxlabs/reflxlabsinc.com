@@ -3,20 +3,20 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "40ca15acfaebe8034bebd37dbafb119b",
+    "hash": "5cc2ef87d6b0d65205f33c3742681dd6",
     "packages": [
         {
             "name": "components/bootstrap",
-            "version": "3.0.0",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/components/bootstrap.git",
-                "reference": "670295b9d6170a79acc8586a15e729bf24128275"
+                "reference": "ed686e60f966ba415e34f8825fad454993afac4b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/components/bootstrap/zipball/670295b9d6170a79acc8586a15e729bf24128275",
-                "reference": "670295b9d6170a79acc8586a15e729bf24128275",
+                "url": "https://api.github.com/repos/components/bootstrap/zipball/ed686e60f966ba415e34f8825fad454993afac4b",
+                "reference": "ed686e60f966ba415e34f8825fad454993afac4b",
                 "shasum": ""
             },
             "require": {
@@ -34,7 +34,8 @@
                     "files": [
                         "js/bootstrap.min.js",
                         "css/*.css",
-                        "fonts/*"
+                        "fonts/*",
+                        "less/*"
                     ],
                     "shim": {
                         "deps": [
@@ -58,7 +59,7 @@
                 "bootstrap",
                 "css"
             ],
-            "time": "2013-10-16 05:44:24"
+            "time": "2013-12-08 11:53:27"
         },
         {
             "name": "components/font-awesome",
@@ -269,12 +270,9 @@
 
     ],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "sculpin/sculpin": 20,
-        "dflydev/embedded-composer-console": 20,
-        "dflydev/embedded-composer-core": 20,
-        "composer/composer": 20
-    },
+    "stability-flags": [
+
+    ],
     "platform": [
 
     ],

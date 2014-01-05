@@ -1,0 +1,30 @@
+{% extends "base.twig" %}
+{% block content %}
+
+<div class="bio-headshot-wrapper">
+    <div class="bio-headshot"><img src="{{ site.url }}/assets/team/{{ page.symname }}.png"></div>
+</div>
+
+<h1>{{ page.name }}</h1>
+<h2 class="position">{{ page.position }}</h1>
+<div class="bio-social-media">
+    {% if page.twitter %}<a href="https://twitter.com/{{ page.twitter }}"><i class="icon icon-twitter"></i></a>{% endif %}
+    {% if page.linkedin %}<a href="https://twitter.com/{{ page.linkedin }}"><i class="icon icon-linkedin"></i></a>{% endif %}
+    {% if page.github %}<a href="https://twitter.com/{{ page.github }}"><i class="icon icon-github"></i></a>{% endif %}
+</div>
+
+
+<div class="bio-details">
+{% block bio %}Fallback{% endblock bio %}
+</div>
+
+{% if page.blocks.question_application %}
+	<div class="question">
+		<p class="question">What application for Boogio are you most excited to see or want someone to invent?</p>
+		<div class="answer">
+		{% block question_application %}{% endblock %}
+		</div>
+	</div>
+{% endif %}
+
+{% endblock %}

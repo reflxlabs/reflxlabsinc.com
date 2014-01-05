@@ -25,13 +25,98 @@ body {
 	height: 100%;
 }
 
+h2.position {
+	font-weight: normal;
+	font-size: 1.25em;
+	margin-top: -10px;
+	margin-bottom: 5px;
+	color: #aaa;
+}
+
+
+.bio-details {
+	margin-top: 20px;
+}
+.question .question {
+	margin-top: 2em;
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+.question .answer {
+	border-left: .5em solid #aaa;
+	padding: 1em;
+}
+
 #whole-page-container {
 	min-height:100%;
 	position:relative;
 }
 
 #whole-page-content-container {
+	margin-top: 20px;
 	padding-bottom: 6em;
+}
+
+.index-page {
+	margin-top: -20px;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+.bio {
+	margin-top: 3em;
+}
+
+.bio .name {
+	display: block;
+	font-size: 1.75em;
+	font-weight: 300;
+	line-height: 1em;
+}
+.bio .position {
+	display: block;
+	line-height: 1em;
+	color: #aaa;
+}
+.bio-headshot-wrapper,
+.bio .headshot-wrapper {
+	background-color: #ccc;
+	border: 1em solid #eee;
+	border-radius: 50%;
+	margin: 0 auto 1em;
+	overflow: hidden;
+}
+
+.bio .headshot-wrapper {
+	max-width: 200px;
+}
+
+.bio-headshot-wrapper {
+	max-width: 200px;
+}
+
+
+.bio-headshot-wrapper img,
+.bio .headshot-wrapper img {
+	max-width: 100%;
+	height: auto;
+	opacity: .85;
+}
+
+.bio .info {
+	margin-top: 1em;
+}
+
+.bio-social-media,
+.bio .social-media {
+	min-height: 1em;
+}
+.bio-social-media a:not(:hover),
+.bio .social-media a:not(:hover) {
+	color: #8a8a8a;
 }
 
 section.site-footer {
@@ -108,6 +193,13 @@ section.jumbo h1 {
 	margin-bottom: 1em;
 }
 
+@media only screen and (max-width: 420px) {
+	.bio.col-xs-6 {
+		width: 100%;
+		clear: left;
+	}
+}
+
 @media only screen and (min-width: 320px) {
 	.index-page .tagline {
 		text-align: center;
@@ -126,6 +218,12 @@ section.jumbo h1 {
 @media only screen and (min-width: 600px) {
 	.index-page .tagline {
 		font-size: 3em;
+	}
+	.bio-headshot-wrapper {
+		float: right;
+		margin-top: 2em;
+		margin-left: 2em;
+		margin-bottom: 2em;
 	}
 }
 
@@ -160,6 +258,9 @@ section.jumbo h1 {
 }
 
 @media only screen and (min-width: 992px) {
+	.bio-headshot-wrapper {
+		max-width: 300px;
+	}
 	.index-page .tagline {
 		font-size: 5em;
 	}
@@ -174,3 +275,20 @@ section.jumbo h1 {
 		font-size: 6em;
 	}
 }
+
+@media only screen and (min-width: 420px) and (max-width: 991px) {
+	.bio.col-xs-6:nth-of-type(2n+1) {
+		clear: both;
+	}
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+	.bio.col-md-4:nth-of-type(3n+1) {
+		clear: both;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	.bio.col-lg-3:nth-of-type(4n+1) {
+		clear: both;
+	}
+}
+

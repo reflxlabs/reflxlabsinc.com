@@ -1,0 +1,31 @@
+---
+layout: default
+title: Team
+use:
+    - team
+
+---
+
+<h1>Team</h1>
+
+{% for bio in data.team %}
+
+<div class="bio col-xs-6 col-md-4 col-lg-3">
+    <div class="headshot-wrapper">
+        <div class="headshot"><img src="{{ site.url }}/assets/team/{{ bio.meta.symname }}.png"></div>
+    </div>
+    <div class="details">
+        <span class="name">{{ bio.meta.name }}</span>
+        <span class="position">{{ bio.meta.position }}</span>
+            <div class="social-media">
+                {% if bio.meta.twitter %}<a href="https://twitter.com/{{ bio.meta.twitter }}"><i class="icon icon-twitter"></i></a>{% endif %}
+                {% if bio.meta.linkedin %}<a href="https://twitter.com/{{ bio.meta.linkedin }}"><i class="icon icon-linkedin"></i></a>{% endif %}
+                {% if bio.meta.github %}<a href="https://twitter.com/{{ bio.meta.github }}"><i class="icon icon-github"></i></a>{% endif %}
+            </div>
+        <div class="info">
+            {{ bio.blocks.mini_bio|raw }}
+        </div>
+    </div>
+</div>
+
+{% endfor %}
