@@ -70,6 +70,10 @@ h2.position {
 	margin-top: 3em;
 }
 
+.bio:last-of-type {
+	margin-bottom: 3em;
+}
+
 .bio .name {
 	display: block;
 	font-size: 1.75em;
