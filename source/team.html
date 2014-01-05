@@ -11,11 +11,11 @@ use:
 {% for bio in data.team %}
 
 <div class="bio col-xs-6 col-md-4 col-lg-3">
-    <div class="headshot-wrapper">
+    <a href="{{ bio.url }}" title="{{ bio.meta.name }}"><div class="headshot-wrapper">
         <div class="headshot"><img src="{{ site.url }}/assets/team/{{ bio.meta.symname }}.png"></div>
-    </div>
+    </div></a>
     <div class="details">
-        <span class="name">{{ bio.meta.name }}</span>
+        <a href="{{ bio.url }}" title="{{ bio.meta.name }}"><span class="name">{{ bio.meta.name }}</span></a>
         <span class="position">{{ bio.meta.position }}</span>
             <div class="social-media">
                 {% if bio.meta.twitter %}<a href="https://twitter.com/{{ bio.meta.twitter }}"><i class="icon icon-twitter"></i></a>{% endif %}
