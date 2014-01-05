@@ -18,8 +18,8 @@ use:
         <a href="{{ bio.url }}" title="{{ bio.name }}"><span class="name">{{ bio.name }}</span></a>
         <span class="position">{{ bio.position }}</span>
             <div class="social-media">
-                {% if bio.twitter %}<a href="https://twitter.com/{{ bio.twitter }}"><i class="icon icon-twitter"></i></a>{% endif %}
                 {% if bio.linkedin %}<a href="{{ bio.linkedin }}"><i class="icon icon-linkedin"></i></a>{% endif %}
+                {% if bio.twitter %}<a href="https://twitter.com/{{ bio.twitter }}"><i class="icon icon-twitter"></i></a>{% endif %}
                 {% if bio.github %}<a href="https://github.com/{{ bio.github }}"><i class="icon icon-github"></i></a>{% endif %}
             </div>
         <div class="info">

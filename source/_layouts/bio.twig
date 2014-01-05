@@ -8,8 +8,8 @@
 <h1>{{ page.name }}</h1>
 <h2 class="position">{{ page.position }}</h1>
 <div class="bio-social-media">
-    {% if page.twitter %}<a href="https://twitter.com/{{ page.twitter }}"><i class="icon icon-twitter"></i></a>{% endif %}
     {% if page.linkedin %}<a href="{{ page.linkedin }}"><i class="icon icon-linkedin"></i></a>{% endif %}
+    {% if page.twitter %}<a href="https://twitter.com/{{ page.twitter }}"><i class="icon icon-twitter"></i></a>{% endif %}
     {% if page.github %}<a href="https://github.com/{{ page.github }}"><i class="icon icon-github"></i></a>{% endif %}
 </div>
 
