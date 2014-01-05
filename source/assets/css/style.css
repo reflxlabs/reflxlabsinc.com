@@ -66,6 +66,11 @@ h2.position {
 	margin-bottom: 0;
 }
 
+.bio .read-more {
+	font-size: 75%;
+	opacity: .5;
+}
+
 .bio {
 	margin-top: 3em;
 }
