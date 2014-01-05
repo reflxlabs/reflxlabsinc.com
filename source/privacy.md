@@ -1,8 +1,9 @@
 ---
 layout: default
+title: Privacy Policy
 ---
 
-# Privacy
+# Privacy Policy
 
 REFLX Labs, Inc. ("REFLX Labs") is located at 19823 58th Place South, Suite 200 Kent, WA 98032. This Privacy Policy covers use of information collected by REFLX Labs, it's subsidiary websites such as www.boogio.com, and its related mobile app(s).
 
