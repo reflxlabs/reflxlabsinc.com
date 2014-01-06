@@ -1,0 +1,5 @@
+<div class="asset-collection">
+    {% for asset in assets %}
+        <div class="asset"><a href="{{ site.url }}/assets/press-kit/{{ asset.url }}"><img src="{{ site.url }}/assets/press-kit/{{ asset.thumb }}"></a></div>
+    {% endfor %}
+</div>

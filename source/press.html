@@ -31,25 +31,13 @@ assets:
 <h2>Press Kit</h2>
 <h4>REFLX Labs Logos</h4>
 
-<div class="asset-collection">
-    {% for logo in page.assets.reflx.logos %}
-        <div class="asset"><a href="{{ site.url }}/assets/press-kit/{{ logo.url }}"><img src="{{ site.url }}/assets/press-kit/{{ logo.thumb }}"></a></div>
-    {% endfor %}
-</div>
+{% include "asset_collection" with {"assets": page.assets.reflx.logos} %}
 
 <h4>Boogio Logos</h4>
-<div class="asset-collection">
-    {% for logo in page.assets.boogio.logos %}
-        <div class="asset"><a href="{{ site.url }}/assets/press-kit/{{ logo.url }}"><img src="{{ site.url }}/assets/press-kit/{{ logo.thumb }}"></a></div>
-    {% endfor %}
-</div>
+{% include "asset_collection" with {"assets": page.assets.boogio.logos} %}
 
 <h4>Boogio Concept Artwork</h4>
-<div class="asset-collection">
-    {% for marketing_material in page.assets.boogio.marketing_materials %}
-        <div class="asset"><a href="{{ site.url }}/assets/press-kit/{{ marketing_material.url }}"><img src="{{ site.url }}/assets/press-kit/{{ marketing_material.thumb }}"></a></div>
-    {% endfor %}
-</div>
+{% include "asset_collection" with {"assets": page.assets.boogio.marketing_materials} %}
 
 <h4>Boogio Media</h4>
 <p>
