@@ -101,10 +101,12 @@ h2.position {
 
 .bio .headshot-wrapper {
 	max-width: 200px;
+	max-height: 200px;
 }
 
 .bio-headshot-wrapper {
 	max-width: 200px;
+	max-height: 200px;
 }
 
 
@@ -269,6 +271,7 @@ section.jumbo h1 {
 @media only screen and (min-width: 992px) {
 	.bio-headshot-wrapper {
 		max-width: 300px;
+		max-height: 300px;
 	}
 	.index-page .tagline {
 		font-size: 5em;
