@@ -204,6 +204,20 @@ section.jumbo h1 {
 	margin-bottom: 1em;
 }
 
+.asset {
+	float: left;
+	border: 1em solid #eee;
+	padding: 1em;
+	margin-right: 1em;
+}
+
+.asset-collection:after {
+	content: "";
+	clear: both;
+	display: block;
+	width: 0; height: 0;
+}
+
 @media only screen and (max-width: 420px) {
 	.bio.col-xs-6 {
 		width: 100%;
