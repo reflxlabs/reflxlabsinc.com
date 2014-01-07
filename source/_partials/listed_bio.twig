@@ -1,0 +1,24 @@
+<div class="bio col-xs-6 col-md-4 col-lg-3">
+    {% if not bio.skip_bio_link %}<a href="{{ bio.url }}" title="{{ bio.name }}">{% endif %}
+        <div class="headshot-wrapper">
+            <div class="headshot"><img width="400" height="400" src="{{ site.url }}/assets/team/{{ bio.symname }}.png"></div>
+        </div>
+    {% if not bio.skip_bio_link %}</a>{% endif %}
+    <div class="details">
+        {% if not bio.skip_bio_link %}<a href="{{ bio.url }}" title="{{ bio.name }}">{% endif %}
+            <span class="name">{{ bio.name }}</span>
+        {% if not bio.skip_bio_link %}</a>{% endif %}
+        <span class="position">{{ bio.position }}</span>
+            <div class="social-media">
+                {% if bio.linkedin %}<a href="{{ bio.linkedin }}"><i class="icon icon-linkedin"></i></a>{% endif %}
+                {% if bio.twitter %}<a href="https://twitter.com/{{ bio.twitter }}"><i class="icon icon-twitter"></i></a>{% endif %}
+                {% if bio.github %}<a href="https://github.com/{{ bio.github }}"><i class="icon icon-github"></i></a>{% endif %}
+            </div>
+            <div class="info">
+                {{ bio.blocks.mini_bio|raw }}
+                {% if not bio.skip_bio_link %}
+                    <a href="{{ bio.url }}" class="read-more">read more &raquo;</a>
+                {% endif %}
+            </div>
+    </div>
+</div>
