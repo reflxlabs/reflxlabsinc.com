@@ -8,25 +8,18 @@ use:
 
 <h1>Team</h1>
 
-{% for bio in data.team %}
-
-<div class="bio col-xs-6 col-md-4 col-lg-3">
-    <a href="{{ bio.url }}" title="{{ bio.name }}"><div class="headshot-wrapper">
-        <div class="headshot"><img width="400" height="400" src="{{ site.url }}/assets/team/{{ bio.symname }}.png"></div>
-    </div></a>
-    <div class="details">
-        <a href="{{ bio.url }}" title="{{ bio.name }}"><span class="name">{{ bio.name }}</span></a>
-        <span class="position">{{ bio.position }}</span>
-            <div class="social-media">
-                {% if bio.linkedin %}<a href="{{ bio.linkedin }}"><i class="icon icon-linkedin"></i></a>{% endif %}
-                {% if bio.twitter %}<a href="https://twitter.com/{{ bio.twitter }}"><i class="icon icon-twitter"></i></a>{% endif %}
-                {% if bio.github %}<a href="https://github.com/{{ bio.github }}"><i class="icon icon-github"></i></a>{% endif %}
-            </div>
-        <div class="info">
-            {{ bio.blocks.mini_bio|raw }}
-            <a href="{{ bio.url }}" class="read-more">read more &raquo;</a>
-        </div>
-    </div>
+<div class="bios">
+    {% for bio in data.team if not bio.bio_type == 'advisor' %}
+        {% include "listed_bio" %}
+    {% endfor %}
 </div>
 
-{% endfor %}
+<hr class="team-divider">
+
+<h1>Advisory Team</h1>
+
+<div class="bios">
+    {% for bio in data.team if bio.bio_type == 'advisor' %}
+        {% include "listed_bio" %}
+    {% endfor %}
+</div>
