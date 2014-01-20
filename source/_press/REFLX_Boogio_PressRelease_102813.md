@@ -52,5 +52,5 @@ terms posted at REFLX Labs Inc. All rights reserved. REFLX Labs, REFLX, REFLX
 Labs technology, the REFLX Labs logo, Boogio, and Boogio technology are
 trademarks of REFLX Labs Inc. and its related entities. All third-party
 trademarks, trade names, or service marks are the property of their respective
-owners. REFLX Labs Inc’s technology and products are protected by pending U.S.
+owners. REFLX Labs Inc's technology and products are protected by pending U.S.
 and foreign patents.

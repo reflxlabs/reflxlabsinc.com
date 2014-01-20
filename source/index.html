@@ -1,5 +1,7 @@
 ---
 layout: default
+use:
+    - press_releases
 ---
 {% block jumbo %}
     <section class="jumbo">
@@ -12,10 +14,6 @@ layout: default
     <div class="tagline">
         <span>Expression Through Action</span>
     </div>
-
-    <p>
-        We'll be at <a title="CES" href="http://www.cesweb.org/">CES 2014</a>. Will you?
-    </p>
 
     <p>
         Pioneered in Seattle.
@@ -31,8 +29,9 @@ layout: default
     <p>
         <br>
         <br>
-        <strong>October 28th, 2013</strong><br>
-        <a title="REFLX Labs debuts Boogio wearable technology at SIC 2013 (10/28/2013)" href="http://reflxlabsinc.com/press/2013/10/28/REFLX_Boogio_PressRelease_102813/">REFLX Labs debuts Boogio wearable technology at SIC 2013</a>
+        {% for pr in data.press_releases[:1] %}
+            <a  href="{{ pr.url }}">{{ pr.title }}</a>
+        {% endfor %}
         <br>
         <br>
         <br>
