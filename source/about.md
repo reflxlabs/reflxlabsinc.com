@@ -6,9 +6,9 @@ title: About
 
 # About
 
-REFLX Labs Inc. is a Seattle-based technology firm dedicated to the development and distribution of wearable sensors for a variety of applications in entertainment, health, wellness, and more. REFLX Labs' flagship product, [Boogio](http://boogio.com), is a sensor insole for shoes that's capable of measuring acceleration in any direction, pressure along the toe, arch, and heel of the feet, and the projected center of gravity to better understand effects of these forces on physical movement. Boogio will be available to developers and consumers in 2014.
+REFLX Labs, Inc. is a Seattle-based technology firm dedicated to the development and distribution of wearable sensors for a variety of entertainment, health, wellness, and diagnostic applications. The company’s flagship product, [Boogio](http://boogio.com), is a foot-based, multi-sensor pair of technology devices and open wearable platform. Boogio is capable of measuring acceleration in any direction, pressure along the toe, arch, and heel of the feet, gravitational center, and core balance to better understand the effects of these forces on physical movement. Boogio will be available to developers and consumers in 2014.
 
-[Qi2](http://www.qi2.com/) is the hardware engineering arm of REFLX Labs with. It is a recognized leader in the development of advanced sensing and platform solutions, the science of which Qi2 has had as its focus since 1985. Overall, for more than forty years, industry have looked to them to solve the unsolved and deliver new technologies that change what is possible.
+[Qi2](http://www.qi2.com/) is the hardware engineering partner of REFLX Labs. Qi2 is a recognized leader in the development of advanced sensor and platform solutions, which has been a company focus since 1985. For more than 40 years, industry has looked to Qi2 to solve the unsolved and deliver new technologies to change what is possible in our world.
 
 ### Contact Us:
 
